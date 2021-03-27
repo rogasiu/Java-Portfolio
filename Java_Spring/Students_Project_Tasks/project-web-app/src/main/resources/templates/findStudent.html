@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link th:href="@{/css/list-style.css}" rel="stylesheet" />
+<title>Znajdź Student</title>
+</head>
+<body>
+    <div class="root">
+        <h1>Znajdź Studenta</h1>
+        <form th:action="@{/searchStudent}" th:object="${studentt}" method="get">
+            <input type="text" name ="indeks" placeholder="Znajdź Studenta"/>
+            <input type="submit" value="Search" />
+        </form><br>
+        <div th:if="${studentt != null}">
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>Numer Indeksu</th>
+                    <th>Email</th>
+                    <th>Stacjonarny</th>
+                </tr>
+                </thead>
+             <tbody>
+                <tr>
+                    <td th:text="${studentt.studentId}">Id</td>
+                    <td th:text="${studentt}">Imię</td>
+                    <td th:text="${studentt}">Nazwisko</td>
+                    <td th:text="${studentt}">Numer Indeksu</td>
+                    <td th:text="${studentt}">Email</td>
+                    <td th:text="${studentt}">Stacjonarny</td>
+                </tr>
+            </tbody>
+           	</table>
+        </div>
+
+    </div>
+</body>
+</html>

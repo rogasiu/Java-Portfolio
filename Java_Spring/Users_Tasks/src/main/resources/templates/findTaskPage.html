@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Tasks</title>
+</head>
+<body style="text-align:center; margin-left: auto; margin-right: auto">
+<div>
+    <h1>Search tasks</h1>
+    <form th:action="@{/findTask}" method="get">
+        <input type="text" name ="data" placeholder="'Name, status or type'"/>
+        <input type="submit" value="Search" />
+    </form><br>
+    <div th:if="${taskk != null}">
+        <table border="1" style="text-align:center; margin-left: auto; margin-right: auto">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date Added</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Author</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${not #lists.isEmpty(taskk)}" th:each="task : ${taskk}">
+                <td th:text="${task.getTaskId()}">Id</td>
+                <td th:text="${task.getTitle()}">Title</td>
+                <td th:text="${task.getDescription()}">Description</td>
+                <td th:text="${#temporals.format(task.dateAdded, 'dd-MM-yyyy HH:mm')}">Date Added</td>
+                <td th:text="${task.getTypes()}">Type</td>
+                <td th:text="${task.getStatus()}">Status</td>
+                <td >
+                    <a th:if="${task.author != null}" th:text="${task.author.getName()} + ' ' + ${task.author.getLastName()}"></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div><br>
+    <a th:href="@{/tasksList}">Tasks List</a><br>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task</title>
+</head>
+<body style="text-align:center; margin-left: auto; margin-right: auto">
+    <h1>Create task</h1>
+    <form th:action="@{/addTask}" th:method="post" th:object="${task}">
+        <input th:type="text" th:field="*{title}" th:placeholder="'input title'"><br><br>
+        <input th:type="text" th:field="*{description}" th:placeholder="'input description'"><br><br>
+        <select name="types">
+            <option th:each="typeOpt : ${T(com.example.stm.model.enums.Types).values()}"
+                    th:value="${typeOpt}" th:text="${typeOpt.typeName}"></option>
+        </select><br><br>
+        <select name="status">
+            <option th:each="statusOpt : ${T(com.example.stm.model.enums.Status).values()}"
+                    th:value="${statusOpt}" th:text="${statusOpt.statusName}"></option>
+        </select><br><br>
+        <label th:text="'Input author Id'"></label><br>
+        <input th:type="text" th:field="*{author.userId}" th:placeholder="'input authorId'"><br>
+        <input th:type="submit" th:value="register">
+    </form><br>
+    <a th:href="@{/tasksList}"> Tasks List</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Find User</title>
+</head>
+<body style="text-align:center; margin-left: auto; margin-right: auto">
+    <div>
+        <h1>Search user</h1>
+        <form th:action="@{/searchUser}" method="get">
+            <input type="text" th:name ="data" placeholder="'Id or email'"/>
+            <input type="submit" value="Search" />
+        </form><br>
+        <div th:if="${userr != null}">
+            <table border="1" style="text-align:center; margin-left: auto; margin-right: auto">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:if="${userr.isPresent()}">
+                    <td th:text="${userr.get().getUserId()}">Id</td>
+                    <td th:text="${userr.get().getName()}">Name</td>
+                    <td th:text="${userr.get().getLastName()}">Lastname</td>
+                    <td th:text="${userr.get().getEmail()}">Email</td>
+                    <td th:text="${userr.get().isStatus()}">Status</td>
+                </tr>
+                </tbody>
+            </table>
+        </div><br>
+        <a th:href="@{/users}">Users List</a><br>
+    </div>
+</body>
+</html>

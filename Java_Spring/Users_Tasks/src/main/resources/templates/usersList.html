@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+</head>
+<body>
+    <h1 style="text-align:center">Users List</h1>
+    <div style="text-align:center">
+        <a th:href="@{/searchUser}">Find User</a><br>
+        <a th:href="@{/registration}">Register User</a><br>
+        <a th:href="@{/tasksList}">Tasks</a>
+    </div><br>
+
+    <table border="1" style="text-align:center; margin-left: auto; margin-right: auto">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Edit</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr th:each="user : ${allUsers}">
+            <td th:text="${user.userId}">Id</td>
+            <td th:text="${user.name}">Name</td>
+            <td th:text="${user.lastName}">Lastname</td>
+            <td th:text="${user.email}">Email</td>
+            <td th:text="${user.status}">Status</td>
+            <td>
+                <a th:href="@{/userStatusChange(userId=${user.userId})}">Change Status</a><br>
+                <a th:href="@{/userDelete(userId=${user.userId})}">Delete User</a>
+            </td>
+        </tr>
+
+    </tbody>
+
+
+    </table>
+</body>
+</html>

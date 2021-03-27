@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks List</title>
+</head>
+<body>
+<h1 style="text-align:center">Tasks List</h1>
+<div style="text-align:center">
+    <a th:href="@{/findTask}">Find Task</a><br>
+    <a th:href="@{/addTask}">Add Task</a><br>
+    <a th:href="@{/users}">Users</a>
+</div><br>
+
+<table border="1" style="text-align:center; margin-left: auto; margin-right: auto">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date Added</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Author</th>
+        <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="task : ${tasks}">
+        <td th:text="${task.taskId}">Id</td>
+        <td th:text="${task.title}">Title</td>
+        <td th:text="${task.description}">Description</td>
+        <td th:text="${#temporals.format(task.dateAdded, 'dd-MM-yyyy HH:mm')}">Date Added</td>
+        <td th:text="${task.getTypes()}">Type</td>
+        <td th:text="${task.getStatus()}">Status</td>
+        <td >
+            <a th:if="${task.author != null}" th:text="${task.author.getName()} + ' ' + ${task.author.getLastName()}"></a>
+        </td>
+        <td>
+            <a th:href="@{/taskDelete(taskId=${task.taskId})}">Delete Task</a><br>
+            <a th:href="@{/taskChange(taskId=${task.taskId})}">Change Status Task</a>
+        </td>
+    </tr>
+
+    </tbody>
+
+
+</table>
+</body>
+</html>
