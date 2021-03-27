@@ -8,6 +8,8 @@ web applications written in Java with Spring, Thymeleaf, MySQL or PostgreSQL
 
 **Java** - gra Four In Row napisana reaktywnie w języku Java/ Four In Row game written reactive in Java
 
+--//--
+
 **Android_Studio** - Android applications written in Java
 
 **Java_Spring** - web applications written in Java with Spring, Thymeleaf, MySQL or PostgreSQL
