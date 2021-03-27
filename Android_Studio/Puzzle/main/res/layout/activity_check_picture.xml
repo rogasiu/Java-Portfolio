@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckPicture">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="52dp"
+        android:text="WYBIERZ PUZZLE"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="87dp"
+        android:src="@drawable/cat"
+        app:layout_constraintStart_toEndOf="@+id/dog"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="87dp"
+        android:src="@drawable/dog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/fox"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fox"
+        app:layout_constraintStart_toEndOf="@+id/wolf"
+        app:layout_constraintTop_toBottomOf="@+id/bKot" />
+
+    <ImageView
+        android:id="@+id/wolf"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/wolf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bPies" />
+
+    <Button
+        android:id="@+id/bPies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="8dp"
+        android:text="PIES"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog" />
+
+    <Button
+        android:id="@+id/bKot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="8dp"
+        android:text="KOT"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintStart_toEndOf="@+id/bPies"
+        app:layout_constraintTop_toBottomOf="@+id/cat" />
+
+    <Button
+        android:id="@+id/bWilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="8dp"
+        android:text="WILK"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wolf" />
+
+    <Button
+        android:id="@+id/bLis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="8dp"
+        android:text="LIS"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/bWilk"
+        app:layout_constraintTop_toBottomOf="@+id/fox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
