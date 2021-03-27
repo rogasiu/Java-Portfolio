@@ -9,7 +9,7 @@ Autor: **Weronika Nowak**
 
 **Java** - gra Four In Row napisana reaktywnie w języku Java
 
---//--
+------
 
 **Android_Studio** - Android applications written in Java
 
