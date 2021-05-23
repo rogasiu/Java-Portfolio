@@ -1,7 +1,7 @@
 # Portfolio
 Autor: **Weronika Nowak**
 
-**Android_Studio** - aplikacje na system Android napisane w języku Java
+**Android_Studio** - niewielkie aplikacje na system Android napisane w języku Java
 
 **Java** - gra Four In Row napisana reaktywnie w języku Java
 
