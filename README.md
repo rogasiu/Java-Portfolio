@@ -9,7 +9,8 @@ Autor: **Weronika Nowak**
 - Tlumacz - aplikacja, która sprawdza znajomość angielskich słówek. Użytkownik tłumaczy wybrane losowo przez aplikację słówka na język polski lub angielski. Gracz posiada życia oraz udzielając poprawne odpowiedzi gromadzi punkty.
 - Wisielec - popularna gra, w której gracz musi odgadnąć wylosowane słowo poprzez wprowadzanie kolejnych, wybranych przez niego liter. Jeżeli litera nie będzie znajdowała się w danym słowie, to gracz traci jedno życie i zmienia się grafika, która z liczbą nieudanych prób zostanie wyświetlona szubienica z wisielcem. Po utracie wszystkich żyć, gra zostaje zakończona i można zacząć ją od nowa. 
 
-**RxJava** - gra Four In Row napisana reaktywnie w języku Java
+**RxJava** - aplikacje napisane przy użyciu biblioteki RxJava
+- Four In Row - gra napisana reaktywnie w języku Java
 
 **Java_Spring** - aplikacje internetowe napisane w języku Java z użyciem Spring, Thymeleaf, MySQL lub PostgreSQL
 
