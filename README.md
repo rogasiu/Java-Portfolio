@@ -18,11 +18,20 @@ Autor: **Weronika Nowak**
 - **Users_Tasks (praca zespołowa)** - prosta aplikacja internetowa służaca do tworzenia użytkowników i przypisywania im odpowiednich zadań.
 
 ------
+Author: **Weronika Nowak**
 
 **Android_Studio** - Android applications written in Java
+- **AllegroRepos** - a mobile application that downloads a list of repositories of Allegro GitHub account. After clicking on the selected repository, detailed information such as description, date added, last modification and number of stars is displayed. The application uses the GitHub REST Api.
+- **Padasnieg** - an app that animates falling snow, which slowly fills the user's screen,
+- **Pong** - Pong game,
+- **Puzzle** - a puzzle game, you can choose the difficulty level, the image and save your score to a database,
+- **Tlumacz** - an application that checks the knowledge of English words. The user translates randomly selected words by the application into Polish or English. The player has lives and accumulates points by giving correct answers.
+- **Wisielec** - Hangman is a popular game in which the player has to guess the randomly selected word by entering subsequent letters of his choice. If the letter doesn't appear in a given word, the player loses one life and the graphic changes, which will display the gallows with a hanged man with the number of unsuccessful attempts. After losing all of your lives, the game is over and you can start again.
 
-**Java** - Four In Row game written reactive in Java
+**RxJava** - appliactions written using the RxJava library
+- **Four In Row** - a game written reactively in Java
 
-**Java_Spring** - web applications written in Java with Spring, Thymeleaf, MySQL or PostgreSQL
-
-- Delegations and Users Tasks are group projects
+**Java_Spring** - web applications written in Java with Spring Framework, Thymeleaf, MySQL or PostgreSQL
+- **Delegations (praca zespołowa)** - web application for creating delegations for a given user. The application has been divided into user and administrator parts. The user can add, edit and delete delegations and send requests for their approval. The administrator has access to the list of all users, delegations and to edit or delete them. Additionally, it accepts or cancels sent requests for approval.
+- **Students_Project_Tasks** - web application is used to create users, projects and tasks, and then to assign users to projects.
+- **Users_Tasks (praca zespołowa)** - a simple web application for creating users and assigning them appropriate tasks.
