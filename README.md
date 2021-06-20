@@ -32,6 +32,6 @@ Author: **Weronika Nowak**
 - **Four In Row** - a game written reactively in Java
 
 **Java_Spring** - web applications written in Java with Spring Framework, Thymeleaf, MySQL or PostgreSQL
-- **Delegations (praca zespołowa)** - web application for creating delegations for a given user. The application has been divided into user and administrator parts. The user can add, edit and delete delegations and send requests for their approval. The administrator has access to the list of all users, delegations and to edit or delete them. Additionally, it accepts or cancels sent requests for approval.
+- **Delegations (team work)** - web application for creating delegations for a given user. The application has been divided into user and administrator parts. The user can add, edit and delete delegations and send requests for their approval. The administrator has access to the list of all users, delegations and to edit or delete them. Additionally, it accepts or cancels sent requests for approval.
 - **Students_Project_Tasks** - web application is used to create users, projects and tasks, and then to assign users to projects.
-- **Users_Tasks (praca zespołowa)** - a simple web application for creating users and assigning them appropriate tasks.
+- **Users_Tasks (team work)** - a simple web application for creating users and assigning them appropriate tasks.
