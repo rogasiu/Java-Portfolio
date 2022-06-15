@@ -1,4 +1,4 @@
-# Portfolio
+# Java Projects
 Autor: **Weronika Nowak**
 
 **Android_Studio** - aplikacje na system Android napisane w języku Java
